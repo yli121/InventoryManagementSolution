@@ -13,6 +13,33 @@ namespace InventoryManagementSolution {
     public partial class _Default {
         
         /// <summary>
+        /// lbl_search control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_search;
+        
+        /// <summary>
+        /// tbx_search control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbx_search;
+        
+        /// <summary>
+        /// ddl_categories control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_categories;
+        
+        /// <summary>
         /// gv_inventory control.
         /// </summary>
         /// <remarks>
