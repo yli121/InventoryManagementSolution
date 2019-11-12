@@ -67,7 +67,8 @@ namespace InventoryManagementSolution
                 using (SqlCommand cmd = new SqlCommand())
                 {
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = @"select p.product_name,
+                    cmd.CommandText = @"select p.product_id,
+                                                       p.product_name,
                                                        
                                                        s.quantity,
                                                        b.brand_name,
@@ -78,6 +79,56 @@ namespace InventoryManagementSolution
                                                 JOIN IMSDB.production.products p ON s.product_id = p.product_id
                                                 JOIN IMSDB.production.brands b ON p.brand_id = b.brand_id
                                                 JOIN IMSDB.production.categories c ON p.category_id = c.category_id";
+
+                    using (SqlDataAdapter sda = new SqlDataAdapter())
+                    {
+                        try
+                        {
+                            cmd.Connection = conn;
+                            conn.Open();
+
+                            sda.SelectCommand = cmd;
+                            sda.Fill(table);
+                        }
+                        catch (Exception e)
+                        {
+                            throw new Exception("", e);
+                        }
+                        finally
+                        {
+                            if (cmd.Connection != null)
+                            {
+                                if (cmd.Connection.State != ConnectionState.Closed)
+                                    cmd.Connection.Close();
+                                cmd.Connection = null;
+                            }
+                        }
+                    }
+                }
+            }
+            return table;
+        }
+
+        public DataTable GetProductById(int id)
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = @"select p.product_id,
+                                               p.product_name,
+                                                       
+                                                       s.quantity,
+                                                       b.brand_name,
+                                                       c.category_name,
+                                                       p.list_price,
+                                                       p.list_price * s.quantity as total_value
+                                                from IMSDB.production.stocks s
+                                                JOIN IMSDB.production.products p ON s.product_id = p.product_id
+                                                JOIN IMSDB.production.brands b ON p.brand_id = b.brand_id
+                                                JOIN IMSDB.production.categories c ON p.category_id = c.category_id
+                                                where p.product_id = " + id;
 
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {
