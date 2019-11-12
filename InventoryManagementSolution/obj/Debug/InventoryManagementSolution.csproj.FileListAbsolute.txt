@@ -46,9 +46,3 @@ C:\Users\Amber_Pillow\Documents\Visual Studio 2015\Projects\InventoryManagementS
 C:\Users\Amber_Pillow\Documents\Visual Studio 2015\Projects\InventoryManagementSolution\InventoryManagementSolution\obj\Debug\InventoryManagementSolution.csprojResolveAssemblyReference.cache
 C:\Users\Amber_Pillow\Documents\Visual Studio 2015\Projects\InventoryManagementSolution\InventoryManagementSolution\obj\Debug\InventoryManagementSolution.dll
 C:\Users\Amber_Pillow\Documents\Visual Studio 2015\Projects\InventoryManagementSolution\InventoryManagementSolution\obj\Debug\InventoryManagementSolution.pdb
-D:\My Projects\InventoryManagementSolution\InventoryManagementSolution\bin\roslyn\csc.exe
-D:\My Projects\InventoryManagementSolution\InventoryManagementSolution\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\My Projects\InventoryManagementSolution\InventoryManagementSolution\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\My Projects\InventoryManagementSolution\InventoryManagementSolution\bin\roslyn\System.Collections.Immutable.dll
-D:\My Projects\InventoryManagementSolution\InventoryManagementSolution\bin\roslyn\System.Reflection.Metadata.dll
-D:\My Projects\InventoryManagementSolution\InventoryManagementSolution\bin\roslyn\VBCSCompiler.exe

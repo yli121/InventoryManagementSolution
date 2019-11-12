@@ -31,6 +31,15 @@ namespace InventoryManagementSolution {
         protected global::System.Web.UI.WebControls.TextBox tbx_search;
         
         /// <summary>
+        /// lbl_categories control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_categories;
+        
+        /// <summary>
         /// ddl_categories control.
         /// </summary>
         /// <remarks>

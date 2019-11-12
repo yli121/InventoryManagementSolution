@@ -5,6 +5,7 @@
         <hr />
         <asp:Label ID="lbl_search" runat="server" Text="Filter products by name: " />
         <asp:TextBox ID="tbx_search" runat="server" AutoPostBack="true" OnTextChanged="tbx_search_TextChanged" />
+        <asp:Label ID="lbl_categories" runat="server" Text="Select a category: " />
         <asp:DropDownList ID="ddl_categories" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddl_categories_SelectedIndexChanged" />
         <asp:UpdatePanel runat="server" UpdateMode="Conditional">
             <ContentTemplate>
